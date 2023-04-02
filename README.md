@@ -35,7 +35,11 @@ The Certificate Generator is a command-line tool written in Go that generates pe
 
 ## Customizing the HTML Template
 
-You can customise the appearance of the generated certificates by modifying the `certificate.html` file. Use the following placeholders to insert certificate data into the template:
+You can customise the appearance of the generated certificates by modifying the example `certificate.html` file.
+
+>Note: Replace the `<svg></svg>` block in the `certificate.html` to change the logo.
+
+Use the following placeholders to insert certificate data into the template:
 
 - `{{.Name}}`: The name of the person receiving the certificate.
 - `{{.Hours}}`: The number of hours completed.
@@ -92,9 +96,3 @@ A: You can customise the appearance by modifying the `certificate.html` file. Us
 **Q: I encountered an issue or need help. Where can I get support?**
 
 A: Please open an issue on the GitHub repository, and I will try to help you as soon as I can.
-
-## Changelog
-
-- Version 1.0.0: Initial release.
-  - Generate personalised HTML certificates based on JSON input and an HTML template.
-  - Command-line flags for input/output configuration.
