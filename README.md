@@ -86,20 +86,20 @@ You can customize the appearance of the generated certificates by modifying the 
 
 1. Create a `certificates.json` file with the following content:
 
-```json
-{
-  "certificates": [
+    ```json
     {
-      "name": "John Doe",
-      "hours": "60 Hours",
-      "course_title": "Cloud Native Bootcamp",
-      "date_completed": "27/03/2023"
-    },
-    // ...
-  ],
-  "signature": "Jane Smith"
-}
-```
+      "certificates": [
+        {
+          "name": "John Doe",
+          "hours": "60 Hours",
+          "course_title": "Cloud Native Bootcamp",
+          "date_completed": "27/03/2023"
+        },
+        // ...
+      ],
+      "signature": "Jane Smith"
+    }
+    ```
 
 1. Run the Certificate Generator:
 
