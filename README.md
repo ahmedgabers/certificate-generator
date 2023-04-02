@@ -80,7 +80,6 @@ You can customize the appearance of the generated certificates by modifying the 
 - `{{.Hours}}`: The number of hours completed.
 - `{{.CourseTitle}}`: The title of the course.
 - `{{.DateCompleted}}`: The date the course was completed (formatted as "DD/MM/YYYY").
-- `{{.Instructor}}`: The name of the course instructor.
 - `{{.Signature}}`: The signature text.
 
 ## Example
