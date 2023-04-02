@@ -67,7 +67,7 @@ The JSON file should have the following format:
 
 Each certificate data object should include:
 
-- `nam`e: The name of the person receiving the certificate.
+- `name`: The name of the person receiving the certificate.
 - `hours`: The number of hours completed.
 - `course_title`: The title of the course.
 - `date_completed`: The date the course was completed (formatted as "DD/MM/YYYY").
