@@ -29,9 +29,9 @@ The Certificate Generator is a command-line tool written in Go that generates pe
 
 1. Verify that the binary is installed correctly:
 
-  ```bash
-  certgen --help
-  ```
+    ```bash
+    certgen --help
+    ```
 
 ## Customizing the HTML Template
 
