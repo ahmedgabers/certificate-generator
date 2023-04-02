@@ -65,17 +65,17 @@ Use the following placeholders to insert certificate data into the template:
     }
     ```
 
-- `certificates`: An array of certificate data objects.
-- `signature`: The signature text that will be included in all certificates.
+   - `certificates`: An array of certificate data objects.
+   - `signature`: The signature text that will be included in all certificates.
 
-Each certificate data object should include:
+   Each certificate data object should include:
 
-- `name`: The name of the person receiving the certificate.
-- `hours`: The number of hours completed.
-- `course_title`: The title of the course.
-- `date_completed`: The date the course was completed (formatted as "DD/MM/YYYY").
+   - `name`: The name of the person receiving the certificate.
+   - `hours`: The number of hours completed.
+   - `course_title`: The title of the course.
+   - `date_completed`: The date the course was completed (formatted as "DD/MM/YYYY").
 
-1. Run the Certificate Generator:
+2. Run the Certificate Generator:
 
     ```bash
     certgen --filename certificates.json --template certificate.html --output certificates
