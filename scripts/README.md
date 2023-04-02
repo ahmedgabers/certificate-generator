@@ -21,7 +21,7 @@ This will convert all HTML files in the specified input directory (HTML_DIR) int
 
 Available options:
 
-`-d`, `--html-dir DIR` Set the input directory containing HTML files (required).
-`-o`, `--output-dir DIR` Set the output directory for the converted PDF files (default: pdf_output).
-`-p`, `--parallel-processes N`Set the number of parallel processes to run simultaneously (default: 4).
-`-h`, `--help` Display this help message and exit.
+- `-d`, `--html-dir DIR` Set the input directory containing HTML files (required).
+- `-o`, `--output-dir DIR` Set the output directory for the converted PDF files (default: pdf_output).
+- `-p`, `--parallel-processes N`Set the number of parallel processes to run simultaneously (default: 4).
+- `-h`, `--help` Display this help message and exit.
