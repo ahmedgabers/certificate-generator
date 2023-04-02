@@ -1,10 +1,10 @@
 # Certificate Generator
 
-The Certificate Generator is a command-line tool written in Go that generates personalized HTML certificates based on a provided JSON file and an HTML template.
+The Certificate Generator is a command-line tool written in Go that generates personalised HTML certificates based on a provided JSON file and an HTML template.
 
 ## Features
 
-- Generates personalized HTML certificates.
+- Generates personalised HTML certificates.
 - Reads certificate data from a JSON file.
 - Customizable HTML template for certificates.
 - Supports command-line flags for input/output configuration.
@@ -21,47 +21,21 @@ The Certificate Generator is a command-line tool written in Go that generates pe
       chmod +x certgen-linux-amd64
     ```
 
-## Usage
+1. Move the binary to a location in your PATH:
 
-```bash
-certgen --filename <JSON_FILE> --template <HTML_TEMPLATE> --output <OUTPUT_DIR>
-```
+   ```bash
+   sudo mv certgen-linux-amd64 /usr/local/bin/certgen
+   ```
 
-- `<JSON_FILE>`: The path to the JSON file containing the certificate data (default: certificates.json).
-- `<HTML_TEMPLATE>`: The path to the HTML template file used for generating certificates (default: certificate.html).
-- `<OUTPUT_DIR>`: The path to the directory where the generated HTML files will be created (default: ./certificates).
+1. Verify that the binary is installed correctly:
 
-## JSON File Format
-
-The JSON file should have the following format:
-
-```json
-{
-  "certificates": [
-    {
-      "name": "John Doe",
-      "hours": "60 Hours",
-      "course_title": "Cloud Native Bootcamp",
-      "date_completed": "27/03/2023"
-    },
-  ],
-  "signature": "Jane Smith"
-}
-```
-
-- `certificates`: An array of certificate data objects.
-- `signature`: The signature text that will be included in all certificates.
-
-Each certificate data object should include:
-
-- `name`: The name of the person receiving the certificate.
-- `hours`: The number of hours completed.
-- `course_title`: The title of the course.
-- `date_completed`: The date the course was completed (formatted as "DD/MM/YYYY").
+  ```bash
+  certgen --help
+  ```
 
 ## Customizing the HTML Template
 
-You can customize the appearance of the generated certificates by modifying the certificate.html file. Use the following placeholders to insert certificate data into the template:
+You can customise the appearance of the generated certificates by modifying the `certificate.html` file. Use the following placeholders to insert certificate data into the template:
 
 - `{{.Name}}`: The name of the person receiving the certificate.
 - `{{.Hours}}`: The number of hours completed.
@@ -82,11 +56,20 @@ You can customize the appearance of the generated certificates by modifying the 
           "course_title": "Cloud Native Bootcamp",
           "date_completed": "27/03/2023"
         },
-        // ...
       ],
       "signature": "Jane Smith"
     }
     ```
+
+- `certificates`: An array of certificate data objects.
+- `signature`: The signature text that will be included in all certificates.
+
+Each certificate data object should include:
+
+- `name`: The name of the person receiving the certificate.
+- `hours`: The number of hours completed.
+- `course_title`: The title of the course.
+- `date_completed`: The date the course was completed (formatted as "DD/MM/YYYY").
 
 1. Run the Certificate Generator:
 
@@ -102,9 +85,9 @@ This command will generate one HTML certificate file in the certificates directo
 
 A: Currently, the Certificate Generator only supports generating certificates in HTML format. However, you can consider using third-party libraries or APIs to convert the generated HTML certificates into other formats, such as PDF.
 
-**Q: How can I customize the appearance of the generated certificates?**
+**Q: How can I customise the appearance of the generated certificates?**
 
-A: You can customize the appearance by modifying the `certificate.html` file. Use the provided placeholders (e.g., `{{.Name}}`, `{{.Hours}}`, etc.) to insert certificate data into the template. You can also modify the CSS styles and HTML structure to achieve the desired look and feel.
+A: You can customise the appearance by modifying the `certificate.html` file. Use the provided placeholders (e.g., `{{.Name}}`, `{{.Hours}}`, etc.) to insert certificate data into the template. You can also modify the CSS styles and HTML structure to achieve the desired look and feel.
 
 **Q: I encountered an issue or need help. Where can I get support?**
 
@@ -113,5 +96,5 @@ A: Please open an issue on the GitHub repository, and I will try to help you as 
 ## Changelog
 
 - Version 1.0.0: Initial release.
-  - Generate personalized HTML certificates based on JSON input and an HTML template.
+  - Generate personalised HTML certificates based on JSON input and an HTML template.
   - Command-line flags for input/output configuration.
