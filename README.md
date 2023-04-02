@@ -15,22 +15,14 @@ The Certificate Generator is a command-line tool written in Go that generates pe
 
 ## Installation
 
-1. Clone the repository:
+1. Go to the [releases page](https://github.com/ahmedgabers/certificate-generator/releases) of this repository.
+
+1. Download the appropriate binary for your operating system.
+
+1. Make the binary executable, for example:
 
     ```bash
-    git clone https://github.com/ahmedgabers/certificate-generator.git
-    ```
-
-1. Change the working directory to the cloned repository:
-
-    ```bash
-    cd certificate-generator
-    ```
-
-1. Build the executable:
-
-    ```bash
-    go build -o certgen
+      chmod +x certgen-linux-amd64
     ```
 
 ## Usage
@@ -56,7 +48,6 @@ The JSON file should have the following format:
       "course_title": "Cloud Native Bootcamp",
       "date_completed": "27/03/2023"
     },
-    // ...
   ],
   "signature": "Jane Smith"
 }
@@ -107,7 +98,7 @@ You can customize the appearance of the generated certificates by modifying the 
     certgen --filename certificates.json --template certificate.html --output certificates
     ```
 
-This command will generate two HTML certificate files in the certificates directory.
+This command will generate one HTML certificate file in the certificates directory.
 
 ## FAQ
 
