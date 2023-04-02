@@ -9,10 +9,6 @@ The Certificate Generator is a command-line tool written in Go that generates pe
 - Customizable HTML template for certificates.
 - Supports command-line flags for input/output configuration.
 
-## Prerequisites
-
-- Go 1.17 or later
-
 ## Installation
 
 1. Go to the [releases page](https://github.com/ahmedgabers/certificate-generator/releases) of this repository.
